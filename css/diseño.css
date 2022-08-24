@@ -1,0 +1,313 @@
+.container-fluid {
+    background-image: linear-gradient(-90deg, #00539b, #fff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: #F5F5F5;
+    height: 200px;
+}
+
+.container__header {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo img {
+    width: 180px;
+}
+
+
+.menu nav ul {
+    display: flex;
+}
+
+.menu nav ul li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.menu nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    transition: opacity 300ms;
+}
+
+.menu nav ul li a:hover {
+    opacity: 0.6;
+}
+
+
+.register input,
+.buttons__cover .register {
+    padding: 14px 50px;
+    border: none;
+    background: black;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+}
+
+.register input:hover,
+.buttons__cover .register:hover {
+    background: #69F1A1;
+    color: black;
+}
+
+
+/* PORTADA - COVER */
+
+main{
+    height: calc(100vh + 800px);
+    background: #F5F5F5;
+}
+
+.container__cover{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cover{
+    padding-top: 60px;
+    display: flex;
+}
+
+.text__information{
+    width: 50%;
+}
+
+.text__information h1{
+    font-size: 60px;
+}
+
+.text__information p{
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+.buttons__cover{
+    display: flex;
+    margin-top: 40px;
+}
+
+.buttons__cover .read-more{
+    padding: 14px 40px;
+    border: none;
+    background: white;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 300ms;
+    margin-left: 10px;
+}
+
+.buttons__cover .read-more:hover{
+    background: #E8E8E8;
+}
+
+.media__cover{
+    width: 50%;
+    
+}
+
+.media__cover img{
+    width: 700px;
+    margin-top: -80px;
+}
+
+/* BANNER */
+
+.container__banner {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.banner {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: #00539b;
+    position: relative;
+}
+
+.banner .icon {
+    width: 40%;
+}
+
+
+.banner .text {
+    width: 60%;
+    position: relative;
+}
+
+.banner .text h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.banner .text input {
+    margin-top: 20px;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 300ms;
+}
+
+.banner .text input:hover {
+    color: #ff193d;
+}
+
+
+
+#icon_heart {
+    width: 370px;
+    margin-top: 40px;
+    position: relative;
+    filter: drop-shadow(-20px 0px 30px rgb(0, 83, 155));
+}
+
+
+/* PIE DE PAGINA */
+
+.pie-pagina {
+    width: 100%;
+    background-image: linear-gradient(-90deg, #00539b, #fff);
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-top: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #00539b;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #00539b;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff
+}
+
+.pie-pagina.grupo-2 small {
+    font-size: 15px;
+}
+
+
+
+@media (max-width:1024px){
+    main {
+        padding: 20px;
+    }
+    .text__information-cover h1{
+        font-size: 40px;
+    }
+    .text__information-cover p{
+        font-size: 16px;
+    }
+    .banner__text h2{
+        font-size: 22px;
+    }
+    #icon_heart{
+        left: -60px;
+    }
+}
+
+@media (max-width:920px){
+
+    .text__information{
+        width: 100%;
+    }
+
+    .media__cover{
+        display: none ;
+    }
+
+    .banner{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #icon_heart{
+        left: 0;
+    }
+
+    .banner__text{
+        width: 100%;
+        margin-top: -100px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
