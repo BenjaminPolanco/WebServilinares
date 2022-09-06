@@ -39,7 +39,7 @@
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Clim360/index.html" target="_blank">Clim 360°</a>
@@ -50,58 +50,61 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Proyecto1</a></li>
-              <li><a class="dropdown-item" href="#">Proyecto2</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          
-        </ul>
 
+        </ul>
       </div>
     </div>
   </nav>
 
 
 
-  <!-- CONTENIDO -->
-
-  <main >
-    <div class="container__cover">
-      <div class="cover">
-        <div class="text__information">
-          <h1>Infraestructura Servilinares.</h1>
-
-          <p>Vaya más allá de informar sobre datos históricos. Utilice la inteligencia procesable de cada
-            evento digital para impactar positivamente en los resultados comerciales. Continuamente. En
-            tiempo real. A escala.</p>
+<!--SLIDER-->
 
 
-        </div>
-        <div class="media__cover">
-          <img src="img/6308-removebg-preview.png">
-        </div>
-      </div>
+<div class="slider">
+  <div class="slide active">
+    <a href="Clim360/index.html" target="_blank"><img src="img/slider/pexels-los-muertos-crew-8853536 (1).jpg" alt=""></a>
+    <div class="info">
+      <h2>Clim 360°</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-
-    <div class="container__banner">
-      <div class="banner">
-        <div class="icon">
-          <img src="img/innovacion.png" id="icon_heart" alt="">
-        </div>
-        <div class="img__icon-fire">
-          <img src="media/fire-dynamic-color.png" id="icon_fire" alt="">
-        </div>
-
-        <div class="text">
-          <h2> "La innovación es un desafío y no un drama, una oportunidad y no una amenaza" </h2>
-          <input type="button" value="Leer más">
-        </div>
-      </div>
+  </div>
+  <div class="slide">
+    <img src="img/slider/pexels-piotr-arnoldes-6109677 (1).jpg" alt="">
+    <div class="info">
+      <h2>Servicios</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-  </main>
+  </div>
+  <div class="slide">
+    <img src="img/slider/pexels-ryan-pilato-5763057.jpg" alt="">
+    <div class="info">
+      <h2>Innovación</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <div class="slide">
+    <img src="img/slider/pexels-thisisengineering-3861458 (1).jpg" alt="">
+    <div class="info">
+      <h2>Proyectos</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+
+  <div class="navigation">
+    <i class="fas fa-chevron-left prev-btn"></i>
+    <i class="fas fa-chevron-right next-btn"></i>
+  </div>
+  <div class="navigation-visibility">
+    <div class="slide-icon active"></div>
+    <div class="slide-icon"></div>
+    <div class="slide-icon"></div>
+    <div class="slide-icon"></div>
+    
+  </div>
+</div>
 
 
   <!-- PIE DE PAGINA -->
@@ -138,9 +141,10 @@
     </div>
 
   </footer>
-
-
+  
   <script src="index.js"></script>
+
+  <script src="Js/slide.js"></script>
 </body>
 
 </html>
